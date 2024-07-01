@@ -32,17 +32,14 @@ public class Contacts {
         // Asking for a letter and printing names starting with that letter
         System.out.println("Enter a letter to find names:");
         s = sc.next();
-        boolean found = false;
+        
         System.out.println("Names with "+s+"are :");
         for (i = 0; i < arr.length; i++) {
             fname = arr[i];
             if (fname.startsWith(s)) {
                 System.out.println(fname);
-                found = true;
+                
             }
-        }
-        if (found=false) {
-            System.out.println("No names found starting with '" + s + "'");
         }
 
         
