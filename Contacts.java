@@ -9,7 +9,7 @@ public class Contacts {
         Scanner sc = new Scanner(System.in);
 
         int i;
-        String fname, fletter, s;
+        String fname, s;
         String arr[] = new String[4];
         System.out.println("Enter the names");
         for (i = 0; i < arr.length; i++) {
