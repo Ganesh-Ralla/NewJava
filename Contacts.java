@@ -36,7 +36,7 @@ public class Contacts {
         System.out.println("Names with "+s+"are :");
         for (i = 0; i < arr.length; i++) {
             fname = arr[i];
-            if (fname.startsWith(s)) {
+            if (fname.charAt(0)==s.charAt(0)) {
                 System.out.println(fname);
                 
             }
