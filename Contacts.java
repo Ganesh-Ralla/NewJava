@@ -9,7 +9,8 @@ public class Contacts {
         Scanner sc = new Scanner(System.in);
 
         int i;
-        String fname, s;
+        String fname,  s;
+        boolean b;
         String arr[] = new String[4];
         System.out.println("Enter the names");
         for (i = 0; i < arr.length; i++) {
@@ -32,16 +33,20 @@ public class Contacts {
         // Asking for a letter and printing names starting with that letter
         System.out.println("Enter a letter to find names:");
         s = sc.next();
-        
-        System.out.println("Names with "+s+"are :");
+
+        b=false;
+        System.out.println("Names with "+s+" are :");
         for (i = 0; i < arr.length; i++) {
             fname = arr[i];
             if (fname.charAt(0)==s.charAt(0)) {
                 System.out.println(fname);
-                
+                b=true;
+
             }
         }
-
+        if(b==false) {
+        	System.out.println("No names found with letter "+s);
+        }
         
     }
 
