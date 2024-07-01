@@ -8,10 +8,13 @@ public class Contacts {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int i;
+        int i,n;
         String fname,  s;
         boolean b;
-        String arr[] = new String[4];
+        System.out.println("Enter no.of names");
+        n=sc.nextInt();
+        
+        String arr[] = new String[n];
         System.out.println("Enter the names");
         for (i = 0; i < arr.length; i++) {
             arr[i] = sc.next();
@@ -47,6 +50,9 @@ public class Contacts {
         if(b==false) {
         	System.out.println("No names found with letter "+s);
         }
+        
+        
+
         
     }
 
